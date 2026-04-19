@@ -106,16 +106,7 @@ Get a free API key from [Google AI Studio](https://aistudio.google.com/apikey), 
 ```bash
 export GEMINI_API_KEY="your_key_here"
 ```
-
-### 4. Run the app
-```bash
-python3 app.py
-```
-
-The server starts at **http://127.0.0.1:5555**.
-
----
-
+--
 ## Endpoints
 
 ### `POST /single`
@@ -167,10 +158,3 @@ curl http://127.0.0.1:5555/health
 
 ---
 
-## Relevance to AI Systems Research Topics
-
-| Topic | How this project demonstrates it |
-|---|---|
-| **SignalBench** | `/benchmark` endpoint computes per-method accuracy against a labeled dataset; confidence scoring and per-sample correctness flags mirror structured evaluation pipelines |
-| **GreenQuery** | LLM-based classification with schema-constrained JSON responses; structured output with `label`, `polarity_score`, `confidence`, and `reasoning` fields enforced via system prompt |
-| **NanoCaesura** | Dual-engine NLP comparison pipeline; divergence analysis (`polarity_delta`, `agreement`) between a classical and neural method on identical inputs |
